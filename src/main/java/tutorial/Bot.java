@@ -9,6 +9,8 @@ import org.telegram.telegrambots.meta.api.objects.User;
 import java.util.List;
 
 public class Bot extends TelegramLongPollingBot {
+    Integer num = null;
+    Integer num2 = null;
     @Override
     public void onUpdateReceived(Update update) {
         Message msg = update.getMessage();
