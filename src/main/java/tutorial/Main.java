@@ -11,10 +11,9 @@ Build systems:
 
 public class Main {
     public static void main(String[] args) throws TelegramApiException {
-        // don't work if run with maven
-        // works if code is run manually from the terminal
-//        String botToken = System.getenv("KATE_MAX_PLAYGROUND_TELEGRAM_BOT_TOKEN");
+        String botToken = System.getenv("KATE_MAX_PLAYGROUND_TELEGRAM_BOT_TOKEN");
+        System.out.println(botToken);
         TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
-        botsApi.registerBot(new Bot("6653988497:AAEb8w16YGsY-ePqTFBVZ44d9SZyePcCq_Q"));
+        botsApi.registerBot(new Bot(botToken));
     }
 }
