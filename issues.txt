@@ -1,2 +1,4 @@
 1) ✅ Maks: cannot get env variable when build with maven (but I can getenv when run the program via terminal)
-2) Bot: setWebhook (in Future)
+2) HTTP requests:
+   https://www.baeldung.com/java-http-request
+*) Bot: setWebhook (in Future)
